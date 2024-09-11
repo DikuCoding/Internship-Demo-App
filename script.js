@@ -35,6 +35,7 @@ const randomBtn = document.getElementById('randomBtn');
 const increaseFont = document.getElementById('increaseFont'); 
 const decreaseFont = document.getElementById('decreaseFont');
 const toggleSwitch = document.getElementById('toggleSwitch');
+const statusText = document.getElementById('status')
 
 // Display initial quote
 function displayQuote() {

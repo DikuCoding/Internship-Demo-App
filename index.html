@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container"></div>
+    <div class="container">
         <div class="header">
-            <h1>Quote Generator</h1>
+            <div class="heading">
+                <h1>Quote Generator</h1>
+            </div>
             <div class="mode-toggle">
                 <label class="switch">
                     <input type="checkbox" id="toggleSwitch"> 
                     <span class="slider"></span>
                 </label>
-                <p id="status">Enable dark mode</p>
+                <span id="status">Enable dark mode</span>
             </div>
         </div>
         <div class="controls">
@@ -27,21 +29,19 @@
                     <option value="sports">Sports</option>
                 </select>
             </div>
-
             <button id="prevBtn">Previous</button>
             <button id="nextBtn">Next</button>
             <button id="randomBtn">Random</button>
-
             <div class="font-controls">
-                <button id="increaseFont">A+</button>
-                <button id="decreaseFont">A-</button>
+                <button id="increaseFont">Increase fontSize+</button>
+                <button id="decreaseFont">Decrease fontSize-</button>
             </div>
             </div>
-
             <div class="quote-display">
                 <p id="quoteText">Here will be the quote displayed.</p>
             </div>
         </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
