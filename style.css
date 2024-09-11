@@ -1,0 +1,113 @@
+/* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: "Roboto", sans-serif;
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+}
+.header h1 {
+    margin-bottom: 20px;
+}
+/* The switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+/* Hide default checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+/* When checked, move the slider */
+input:checked + .slider {
+    background-color: #2196F3;
+}
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+.controls {
+    margin-bottom: 20px;
+}
+.controls select, .controls button {
+    margin: 5px;
+    padding: 10px;
+}
+.categories{
+    margin-bottom: 5px;
+}
+#category, #prevBtn, #nextBtn, #randomBtn{
+    border: 2px ;
+    border-radius: 6px;
+}
+/* #prevBtn{
+    border: 2px ;
+    border-radius: 6px;
+} */
+.quote-display {
+    padding: 20px;
+    font-size: 1.5rem;
+    font-style: italic;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+.mode-toggle {
+    margin-top: 10px;
+}
+/* Font size controls */
+.font-controls {
+    margin-top: 10px;
+}
+/* Dark mode styles */
+.dark-mode {
+    background-color: #161616;
+    color: #fff;
+}
+.dark-mode .quote-display {
+    background-color: #232323;
+    border-color: #343333;
+}
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px auto;
+    }
+}
