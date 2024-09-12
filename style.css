@@ -16,21 +16,13 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
 }
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
+
 .header h1 {
     margin-bottom: 20px;
 }
-.heading{
-    padding-left: 12rem;
-}
 .mode-toggle {
-    margin-top: 10px;
-    padding-left: 5rem;
+    margin: auto;
+    padding-left: 32rem;
 }
 /* The switch */
 .switch {
@@ -135,8 +127,20 @@ input:checked + .slider:before {
     border-color: #343333;
 }
 /* for responsiveness */
-@media (max-width: 600px) {
+@media (max-width: 730px) {
     .container {
         margin: 20px auto;
+    }
+    .mode-toggle {
+        margin: auto;
+        padding-left: 59vw;
+        font-size: 10px;
+    }
+}
+@media (max-width: 390px) {
+    .mode-toggle {
+        margin: auto;
+        padding-left: 48vw;
+        font-size: 7px;
     }
 }
